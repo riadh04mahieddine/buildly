@@ -19,6 +19,16 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+
+  // S'assurer que les styles sont correctement traités
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader', 'postcss-loader'],
+    });
+
+    return config;
+  },
 };
 
 export default nextConfig;

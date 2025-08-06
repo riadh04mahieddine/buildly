@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./tailwind.css"; // Import explicite de Tailwind
+import "./tailwind-utilities.css"; // Classes CSS explicites pour garantir les styles
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "uildly | Agence de Développement d\'Apps Mobiles & SaaS pour Startups",
+  title: "Buildly | Agence de Développement d\'Apps Mobiles & SaaS pour Startups",
   description: "Nous aidons les entrepreneurs à construire, lancer et faire grandir des applications ambitieuses qui résolvent de vrais problèmes.",
   icons: {
     icon: [

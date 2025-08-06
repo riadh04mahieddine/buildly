@@ -1,0 +1,4 @@
+/* Fichier pour s'assurer que Tailwind est correctement chargé */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
