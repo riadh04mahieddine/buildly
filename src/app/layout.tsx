@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import "./tailwind.css"; // Import explicite de Tailwind
-import "./tailwind-utilities.css"; // Classes CSS explicites pour garantir les styles
+import "./globals.css"; // Contient déjà les directives Tailwind
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 

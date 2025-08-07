@@ -14,20 +14,10 @@ const nextConfig = {
     // Avertir mais ne pas bloquer le build en cas d'erreurs ESLint
     ignoreDuringBuilds: true,
   },
-  
+
   // Ignorer les erreurs TypeScript lors du build pour Vercel
   typescript: {
     ignoreBuildErrors: true,
-  },
-
-  // S'assurer que les styles sont correctement traités
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader', 'postcss-loader'],
-    });
-
-    return config;
   },
 };
 
